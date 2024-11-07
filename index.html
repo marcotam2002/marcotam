@@ -1,9 +1,234 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-    hello
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marco Tam's personal website">
+  <title>Marco Tam</title>
 
+  <!-- Favicon (Head Icon) -->
+  <link rel="icon" href="images/that's%20not%20me.jpeg" type="image/jpeg">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;  /* White background for the main page */
+      color: #333;  /* Dark text color */
+      line-height: 1.6;
+    }
+
+    /* Header Section */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;  /* White background for the header */
+      color: #333;  /* Dark text in the header */
+      padding: 20px 40px;
+      border-bottom: 2px solid #ddd;  /* Optional: a light border at the bottom */
+    }
+
+    header .logo {
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    header nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    header nav a {
+      color: #333;  /* Dark links in the header */
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    header nav a:hover {
+      color: #0070f3;  /* Hover color */
+    }
+
+    /* Main Content */
+    main {
+      padding: 100px 40px;
+      text-align: center;
+    }
+
+    main h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #111;  /* Dark text for the main heading */
+    }
+
+    main p {
+      font-size: 1.2rem;
+      color: #555;  /* Lighter text for the description */
+    }
+
+    .profile-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;  /* Space between the image and the text */
+        margin-bottom: 30px;
+    }
+
+    .profile-container img {
+        width: 150px;  /* Adjust the size to your preference */
+        height: 150px;  /* Ensure the height is equal to the width to make it a square */
+        border: 5px solid #333;  /* Increase the border width to 5px (or more) */
+        object-fit: cover;  /* Ensure the image covers the box without stretching */
+        border-radius: 0;  /* Remove the circular effect, making it a square */
+    }
+
+
+    .profile-container div {
+        display: flex;
+        flex-direction: column;  /* Align text vertically */
+        text-align: left;  /* Align text to the left */
+    }
+
+    .profile-container img {
+        order: 1;  /* Move the image to the right */
+    }
+
+
+    /* Education Section */
+    .education {
+      padding: 50px 40px;
+      background-color: #f9f9f9; /* Light gray background */
+      text-align: left;
+      margin-top: 40px;
+      border-radius: 8px;
+    }
+
+    .education h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #111;
+    }
+
+    .education .education-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .education .education-item:last-child {
+      border-bottom: none;
+    }
+
+    .education .school-name {
+      font-weight: 600;
+      color: #333;
+      font-size: 1.2rem;
+    }
+
+    .education .degree {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .education .date {
+      font-size: 1rem;
+      color: #999;
+    }
+
+    /* Social Links */
+    .social-links {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-links a {
+      font-size: 1.5rem;
+      color: #333;  /* Dark text color for social links */
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      color: #0070f3;  /* Hover color */
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px 40px;
+      background-color: #fff;  /* White background for the footer */
+      color: #333;  /* Dark text in the footer */
+      border-top: 2px solid #ddd;  /* Optional: a light border at the top */
+    }
+  </style>
+</head>
 <body>
-    hello
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Marco Tam</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Profile Image and Introduction -->
+    <div class="profile-container">
+        <div>
+            <h1>Hi, I'm Marco Tam</h1>
+            <p>Web Developer & Designer</p>
+        </div>
+        <img src="images/that's%20not%20me.jpeg" alt="Marco Tam's head icon">
+    </div>
+      
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+      <h2>Education</h2>
+
+      <div class="education-item">
+        <div>
+          <div class="school-name">University of Example</div>
+          <div class="degree">Bachelor of Science in Computer Science</div>
+        </div>
+        <div class="date">Graduated: 2023</div>
+      </div>
+
+      <div class="education-item">
+        <div>
+          <div class="school-name">Example High School</div>
+          <div class="degree">High School Diploma</div>
+        </div>
+        <div class="date">Graduated: 2019</div>
+      </div>
+    </section>
+
+    <!-- Social Links -->
+    <div class="social-links">
+      <a href="https://github.com/marcotam2002" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/tamkingman" target="_blank">LinkedIn</a>
+      <a href="mailto:marcotam2002@gmail.com">Email</a>
+    </div>
+  </main>
+
 </body>
+</html>
