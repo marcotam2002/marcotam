@@ -1,214 +1,84 @@
+<!-- Copied from https://github.com/timothygebhard/minimal-academic-website-->
+
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Marco Tam - Researcher in Computational Imaging, 3D Vision, and Generative AI">
-  <title>Marco Tam - Researcher</title>
 
-  <!-- Favicon -->
-  <link rel="icon" href="images/Unknown.png" type="image/png">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Define title -->
+    <title>Carl Barks</title>
 
-  <style>
-    /* Basic Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <!-- Include favicon. Use, e.g., https://favicon.io/ -->
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      line-height: 1.6;
-    }
+    <!-- Include style sheets -->
+    <link rel="stylesheet" href="main.css" />
 
-    /* Header */
-    header {
-      background-color: #0070f3;
-      color: #fff;
-      padding: 20px 40px;
-      text-align: center;
-    }
+    <!-- Fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet" />
 
-    header h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
-    }
+    <!-- Load FontAwesome (for icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+    />
 
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
+    <!-- Load Academicons (for more icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css"
+      integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+      crossorigin="anonymous"
+    />
+  </head>
 
-    /* Main Content */
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+  <body>
+    <section id="content">
+      <!-- Avatar image -->
+      <img src="image.jpg" alt="Carl Barks" class="avatar" />
 
-    section {
-      margin-bottom: 40px;
-    }
-
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #0070f3;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-    }
-
-    /* About Section */
-    .about p {
-      font-size: 1rem;
-      line-height: 1.8;
-    }
-
-    /* Publications Section */
-    .publication-item {
-      display: flex;
-      gap: 20px;
-      margin-bottom: 30px;
-    }
-
-    .publication-item img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border: 2px solid #ddd;
-      border-radius: 8px;
-    }
-
-    .publication-item h3 {
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-
-    .publication-item p {
-      font-size: 0.9rem;
-      color: #555;
-      line-height: 1.5;
-    }
-
-    .publication-item a {
-      color: #0070f3;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-
-    .publication-item a:hover {
-      text-decoration: underline;
-    }
-
-    /* Education Section */
-    .education-item {
-      margin-bottom: 20px;
-    }
-
-    .education-item h3 {
-      font-size: 1.2rem;
-      font-weight: 600;
-    }
-
-    .education-item p {
-      font-size: 0.9rem;
-      color: #555;
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #0070f3;
-      color: #fff;
-      margin-top: 40px;
-    }
-
-    footer a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Header -->
-  <header>
-    <h1>Marco Tam</h1>
-    <p>Researcher in Computational Imaging, 3D Vision, and Generative AI</p>
-  </header>
-
-  <!-- Main Content -->
-  <main>
-    <!-- About Section -->
-    <section class="about" id="about">
-      <h2>About Me</h2>
+      <!-- Text -->
+      <h1>Hi, I'm Carl Barks!</h1>
       <p>
-        I am a master's student at the Institute of Science Tokyo, advised by Prof. 
-        <a href="https://open-vision.sc.e.titech.ac.jp/~reikawa/" target="_blank">Rei Kawakami</a>. 
-        I hold a B.S. degree in Mathematics from The Chinese University of Hong Kong. 
-        My research interests include Computational Imaging, 3D Vision, and Generative AI. 
-        Currently, I focus on topics such as pointmap estimations and generative computational imaging.
+        I am a Ph.D. student in empirical barkology at Woof University.
       </p>
+      <p>
+        Most of my current research is driven by trying to find an answer to the age-old question of “Who is a good boy?"
+      </p>
+      <p>
+        Please feel free to get in touch!
+      </p>
+
+      <!-- Icons -->
+      <ul class="icons">
+        <li>
+          <a href="" title="Institutional website"><i class="fas fa-university"></i></a>
+        </li>
+        <li>
+          <a href="" title="E-Mail"><i class="fas fa-envelope"></i></a>
+        </li>
+        <li>
+          <a href="" title="GitHub"><i class="fab fa-github"></i></a>
+        </li>
+        <li>
+          <a href="" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="" title="NASA / ADS"><i class="ai ai-ads"></i></a>
+        </li>
+        <li>
+          <a href="" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+        </li>
+      </ul>
     </section>
-
-    <!-- Publications Section -->
-    <section class="publications" id="publications">
-      <h2>Publications</h2>
-      <div class="publication-item">
-        <img src="papers/2025/PolarFree.png" alt="PolarFree Paper">
-        <div>
-          <h3>PolarFree: Polarization-based Reflection-Free Imaging</h3>
-          <p>
-            <b style="color: darkred;">Mingde Yao</b>, Menglu Wang, King-Man Tam, Lingen Li, Tianfan Xue, and Jinwei Gu.<br>
-            <i>IEEE Conference on Computer Vision and Pattern Recognition <b style="color: darkred;">(CVPR)</b></i>
-          </p>
-          <div>
-            <a href="https://mdyao.github.io/PolarFree/" target="_blank">PDF</a> |
-            <a href="https://mdyao.github.io/PolarFree/" target="_blank">Project Page</a> |
-            <a href="https://github.com/mdyao/PolarFree" target="_blank">Code</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education Section -->
-    <section class="education" id="education">
-      <h2>Education</h2>
-      <div class="education-item">
-        <h3>Master of Science, Institute of Science Tokyo</h3>
-        <p>Advised by Prof. Rei Kawakami</p>
-      </div>
-      <div class="education-item">
-        <h3>Bachelor of Science in Mathematics, The Chinese University of Hong Kong</h3>
-        <p>Graduated with Honors</p>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>Connect with me: 
-      <a href="https://github.com/marcotam2002" target="_blank">GitHub</a> | 
-      <a href="https://www.linkedin.com/in/tamkingman" target="_blank">LinkedIn</a> | 
-      <a href="mailto:marcotam2002@gmail.com">Email</a>
-    </p>
-  </footer>
-
-</body>
+  </body>
+ 
 </html>
