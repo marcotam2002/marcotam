@@ -3,18 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Marco Tam's personal website">
-  <title>Marco Tam</title>
+  <meta name="description" content="Marco Tam - Researcher in Computational Imaging, 3D Vision, and Generative AI">
+  <title>Marco Tam - Researcher</title>
 
-  <!-- Favicon (Head Icon) -->
-  <!-- <link rel="icon" href="images/that's%20not%20me.jpeg" type="image/jpeg"> -->
-  <link rel="icon" href="images/Unknown.png" type="image/jpeg">
+  <!-- Favicon -->
+  <link rel="icon" href="images/Unknown.png" type="image/png">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
-    /* Basic reset */
+    /* Basic Reset */
     * {
       margin: 0;
       padding: 0;
@@ -23,157 +22,126 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #fff;  /* White background for the main page */
-      color: #333;  /* Dark text color */
+      background-color: #f4f4f4;
+      color: #333;
       line-height: 1.6;
     }
 
-    /* Header Section */
+    /* Header */
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #fff;  /* White background for the header */
-      color: #333;  /* Dark text in the header */
+      background-color: #0070f3;
+      color: #fff;
       padding: 20px 40px;
-      border-bottom: 2px solid #ddd;  /* Optional: a light border at the bottom */
+      text-align: center;
     }
 
-    header .logo {
-      font-size: 1.8rem;
+    header h1 {
+      font-size: 2.5rem;
       font-weight: 600;
-      letter-spacing: 1px;
     }
 
-    header nav {
-      display: flex;
-      gap: 20px;
-    }
-
-    header nav a {
-      color: #333;  /* Dark links in the header */
-      text-decoration: none;
-      font-size: 1rem;
-    }
-
-    header nav a:hover {
-      color: #0070f3;  /* Hover color */
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
     }
 
     /* Main Content */
     main {
-      padding: 100px 40px;
-      text-align: center;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    main h1 {
-      font-size: 3rem;
-      font-weight: 600;
-      margin-bottom: 10px;
-      color: #111;  /* Dark text for the main heading */
+    section {
+      margin-bottom: 40px;
     }
 
-    main p {
-      font-size: 1.2rem;
-      color: #555;  /* Lighter text for the description */
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #0070f3;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
     }
 
-    .profile-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;  /* Space between the image and the text */
-        margin-bottom: 30px;
+    /* About Section */
+    .about p {
+      font-size: 1rem;
+      line-height: 1.8;
     }
 
-    .profile-container img {
-        width: 150px;  /* Adjust the size to your preference */
-        height: 150px;  /* Ensure the height is equal to the width to make it a square */
-        border: 5px solid #333;  /* Increase the border width to 5px (or more) */
-        object-fit: cover;  /* Ensure the image covers the box without stretching */
-        border-radius: 0;  /* Remove the circular effect, making it a square */
+    /* Publications Section */
+    .publication-item {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
     }
 
-
-    .profile-container div {
-        display: flex;
-        flex-direction: column;  /* Align text vertically */
-        text-align: left;  /* Align text to the left */
-    }
-
-    .profile-container img {
-        order: 1;  /* Move the image to the right */
-    }
-
-
-    /* Education Section */
-    .education {
-      padding: 50px 40px;
-      background-color: #f9f9f9; /* Light gray background */
-      text-align: left;
-      margin-top: 40px;
+    .publication-item img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 2px solid #ddd;
       border-radius: 8px;
     }
 
-    .education h2 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-      color: #111;
-    }
-
-    .education .education-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 0;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .education .education-item:last-child {
-      border-bottom: none;
-    }
-
-    .education .school-name {
-      font-weight: 600;
-      color: #333;
+    .publication-item h3 {
       font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 10px;
     }
 
-    .education .degree {
-      font-size: 1rem;
+    .publication-item p {
+      font-size: 0.9rem;
       color: #555;
+      line-height: 1.5;
     }
 
-    .education .date {
-      font-size: 1rem;
-      color: #999;
-    }
-
-    /* Social Links */
-    .social-links {
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .social-links a {
-      font-size: 1.5rem;
-      color: #333;  /* Dark text color for social links */
+    .publication-item a {
+      color: #0070f3;
       text-decoration: none;
+      font-size: 0.9rem;
     }
 
-    .social-links a:hover {
-      color: #0070f3;  /* Hover color */
+    .publication-item a:hover {
+      text-decoration: underline;
+    }
+
+    /* Education Section */
+    .education-item {
+      margin-bottom: 20px;
+    }
+
+    .education-item h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .education-item p {
+      font-size: 0.9rem;
+      color: #555;
     }
 
     /* Footer */
     footer {
       text-align: center;
-      padding: 20px 40px;
-      background-color: #fff;  /* White background for the footer */
-      color: #333;  /* Dark text in the footer */
-      border-top: 2px solid #ddd;  /* Optional: a light border at the top */
+      padding: 20px;
+      background-color: #0070f3;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -181,64 +149,66 @@
 
   <!-- Header -->
   <header>
-    <div class="logo">Marco Tam</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>Marco Tam</h1>
+    <p>Researcher in Computational Imaging, 3D Vision, and Generative AI</p>
   </header>
 
   <!-- Main Content -->
   <main>
-    <!-- Profile Image and Introduction -->
-    <div class="profile-container">
-        <div>
-            <h1>Hi, I'm Marco Tam</h1>
-        </div>
-        <img src="images/that's%20not%20me.jpeg" alt="Marco Tam's head icon">
-    </div>
-      
-
     <!-- About Section -->
-    <section class="about" id="about" style="text-align: left;">
-      <h2 style="text-align: left; font-size: 1.8rem;">About Me</h2>
-      <p style="font-size: 1rem; line-height: 1.5;"></p>
-      I am a master student at Institute of Science Tokyoe, advised by Prof. <a href="https://open-vision.sc.e.titech.ac.jp/~reikawa/" target="_blank">Rei Kawakami</a>. Before that, I received my B.S. degree in Mathematics from The Chinese University of Hong Kong. My research interests include Computational Imaging, 3D Vision and Generative AI. Specifically, I am currently focusing on topics such as pointmap estimations and generative computational imaging, etc.
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a master's student at the Institute of Science Tokyo, advised by Prof. 
+        <a href="https://open-vision.sc.e.titech.ac.jp/~reikawa/" target="_blank">Rei Kawakami</a>. 
+        I hold a B.S. degree in Mathematics from The Chinese University of Hong Kong. 
+        My research interests include Computational Imaging, 3D Vision, and Generative AI. 
+        Currently, I focus on topics such as pointmap estimations and generative computational imaging.
       </p>
     </section>
 
-    <!-- Research Section -->
-
-    <a name="pub"></a>
-    <h2 id="confpapers">Publications </h2>
-
-    <div class="section">
-      <div class="bio">
-    
-        
-        <!-- CVPR25 -->
-        <div class="paper" id="xxx"><img class="paper" src="papers/2025/PolarFree.png" />
+    <!-- Publications Section -->
+    <section class="publications" id="publications">
+      <h2>Publications</h2>
+      <div class="publication-item">
+        <img src="papers/2025/PolarFree.png" alt="PolarFree Paper">
+        <div>
+          <h3>PolarFree: Polarization-based Reflection-Free Imaging</h3>
+          <p>
+            <b style="color: darkred;">Mingde Yao</b>, Menglu Wang, King-Man Tam, Lingen Li, Tianfan Xue, and Jinwei Gu.<br>
+            <i>IEEE Conference on Computer Vision and Pattern Recognition <b style="color: darkred;">(CVPR)</b></i>
+          </p>
           <div>
-            <a><b>PolarFree: Polarization-based Reflection-Free Imaging</b></a><br />
-            <b style="color:darkred; text-decoration: underline;">Mingde Yao</b>, Menglu Wang, King-Man Tam, Lingen Li, Tianfan Xue, and Jinwei Gu.<br />
-            <i>IEEE Conference on Computer Vision and Pattern Recognition <b style="color:DarkRed;">(CVPR)</b></i><br />
-            [ <a href='https://mdyao.github.io/PolarFree/'>PDF</a> ]
-            [ <a href='https://mdyao.github.io/PolarFree/'>Project page</a> ]
-            [ <a href='https://github.com/mdyao/PolarFree'>Code</a> ]
-    
+            <a href="https://mdyao.github.io/PolarFree/" target="_blank">PDF</a> |
+            <a href="https://mdyao.github.io/PolarFree/" target="_blank">Project Page</a> |
+            <a href="https://github.com/mdyao/PolarFree" target="_blank">Code</a>
           </div>
-          <div class="spanner"></div>
         </div>
+      </div>
+    </section>
 
-    <!-- Social Links -->
-    <div class="social-links">
-      <a href="https://github.com/marcotam2002" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/tamkingman" target="_blank">LinkedIn</a>
-      <a href="mailto:marcotam2002@gmail.com">Email</a>
-    </div>
+    <!-- Education Section -->
+    <section class="education" id="education">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>Master of Science, Institute of Science Tokyo</h3>
+        <p>Advised by Prof. Rei Kawakami</p>
+      </div>
+      <div class="education-item">
+        <h3>Bachelor of Science in Mathematics, The Chinese University of Hong Kong</h3>
+        <p>Graduated with Honors</p>
+      </div>
+    </section>
   </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Connect with me: 
+      <a href="https://github.com/marcotam2002" target="_blank">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/tamkingman" target="_blank">LinkedIn</a> | 
+      <a href="mailto:marcotam2002@gmail.com">Email</a>
+    </p>
+  </footer>
 
 </body>
 </html>
